@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="main">
+            <h1>NUMBER CONVERTOR</h1>
+            <div class="options">
+                <div class="FirstOpt">
+                    <p>From</p>
+                    <select name="opt" id="choice1">
+                        <option value="Decimal">Decimal</option>
+                        <option value="Binary">Binary</option>
+                        <option value="Octal">Octal</option>
+                        <option value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                </div>
+                <div class="FirstOpt">
+                    <p>To</p>
+                    <select name="opt" id="choice2">
+                        <option value="Binary">Binary</option>
+                        <option value="Decimal">Decimal</option>
+                        <option value="Octal">Octal</option>
+                        <option value="HexaDecimal">HexaDecimal</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="input" id="inputValue">
+                <p id="para1">Enter Decimal Number</p>
+                <div class="inputLine">
+                    <input type="text" class="inputText" id="num1">
+                    <div class="box" id="box1">10</div>
+                </div>
+            </div>
+
+            <div class="btns">
+                <button id="btn1"><i class="fa-solid fa-equals"></i> Convert</button>
+                <button id="btn2"><i class="fa-solid fa-xmark"></i> Reset</button>
+                <button id="btn3"><i class="fa-solid fa-arrows-rotate"></i> Swap</button>
+            </div>
+           <div class="input inputResult">
+                <p id="para2">Binary Number</p>
+                <div class="inputLine">
+                    <input type="text" class="inputText" id="num2">
+                    <div class="box" id="box2">2</div>
+                </div>
+            </div>
+            <div class="input inputResult">
+                <p>Octal Number</p>
+                <div class="inputLine">
+                    <input type="text" class="inputText">
+                    <div class="box">10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
